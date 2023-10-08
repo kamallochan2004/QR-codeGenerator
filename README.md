@@ -1,6 +1,7 @@
 # QR Code Generator
 
 This repository contains a QR code generator that allows you to create QR codes from text input(URL). You can fork this repository, clone it to your local machine, and run it using Node.js to generate QR codes.
+Create your own branch and open a PR to push it into main branch
 
 ## Getting Started
 
