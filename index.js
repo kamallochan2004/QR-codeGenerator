@@ -22,10 +22,8 @@ inquirer
   .catch((error) => {
     if (error.isTtyError) {
       // Prompt couldn't be rendered in the current environment
-      console.log("Prompt couldn't be rendered in the current environment");
     } else {
       // Something else went wrong
-      console.log(error)
     }
   });
 /* 
