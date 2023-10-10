@@ -1,55 +1,75 @@
 body {
-    background-color: DAFFFB;
-    margin :0;
-    font-family:Arial;
-    border:border-box;
+    background-color:  #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
+
+
 .Header {
-    color: #04364A;
-    height: 40px;
-    background-color: #64CCC5;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin: 40px 300px;
-    width: 650px;
-    border-radius: 6px;
+    padding: 20px;
+    background-color: #3e8181; 
+    color: #fff;
 }
+
+
 .Search-bar {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 550px;
-    height: 35px;
-    border: 1px solid ; 
-    border-radius: 5px;
-    margin: 50px 350px 25px;
-}
-.generate-QR {
-    height: 32px;
-    width: 476px;
-    font-size: 1rem;
-    border-radius: 4px 0 0 4px;
-    border: none;
-}
-.Serch-icon{
-    width:58.67px;
-    height:32px;
-    display:flex;
     justify-content: center;
     align-items: center;
-    font-size:23px;
-    background-color: 64CCC5;
-    border-radius: 6px;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0; 
 }
-h2{
-    margin:50px 600px 1px 600px;
-  }
-/* .square {
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    display:flex;
-    margin:1px 600px 10px 550px;
-  } */
+
+
+.Search-bar input.generate-QR {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.Search-bar button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3e8181; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+h2 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+
+   
+    .Header h1 {
+        font-size: 1.5rem;
+    }
+
+   
+    .Search-bar input.generate-QR {
+        width: 90%;
+    }
+
+   
+    .Search-bar {
+        align-items: center;
+    }
+
   
+    .Search-bar, .your-qr {
+        padding: 10px;
+    }
+}
