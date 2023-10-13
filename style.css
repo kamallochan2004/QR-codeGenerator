@@ -4,13 +4,34 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
-
-.Header {
-    text-align: center;
-    padding: 20px;
+.navbar {
+    padding: 0px 100px;
     background-color: #3e8181; 
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.github-button{
+    display: flex;
+    padding: 7px 15px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.github-button:hover{
+    border: 1px solid #333;
+    color: #333;
+
 }
 
 
