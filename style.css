@@ -4,9 +4,17 @@ body, h1, h2, p, div, button, input {
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6b7280;
+    --pink: #ec4899;
+    --purple: #8b5cf6;
+    --cyan: #00ffff;
+}
 body {
-    background-color: #f0f0f0;
+    background-color: var(--dark);
     font-family: Arial, sans-serif;
     height: 100vh;
     width: 100vw;
@@ -19,13 +27,16 @@ a {
 
 .navbar {
     padding: 0px 5%;
-    background-color: #3e8181;
+    background: linear-gradient(to right,var(--cyan),var(--pink));
+    color: white;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-bottom: 20px;
 }
+
 
 .navbar h1 {
     font-size: 2rem; /* Increase font size for the title */
@@ -72,7 +83,7 @@ li{
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: var(--dark);
 }
 
 .generate-QR {
@@ -80,19 +91,36 @@ li{
     padding: 10px;
     font-size: 1rem;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    background-color: var(--darker);
+    border: none;
+    border-radius: 1rem;
+    color: var(--gray);
 }
 
 .Search-bar button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #3e8181;
+    background: linear-gradient(to right,var(--pink),var(--purple));
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.Search-bar button:hover,
+.Search-bar button:focus,
+.Search-bar button:active {
+    cursor: pointer;
+    border-radius: 1rem;
+    background: linear-gradient(to right,var(--cyan),var(--pink));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(249, 104, 203, 0.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
 
 h2 {
     text-align: center;
