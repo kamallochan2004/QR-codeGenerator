@@ -1,10 +1,17 @@
 /* Reset some default styles */
-body, h1, h2, p, div, button, input {
+body,
+h1,
+h2,
+p,
+div,
+button,
+input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --dark: #374151;
     --darker: #1f2937;
     --darkest: #111827;
@@ -13,6 +20,7 @@ body, h1, h2, p, div, button, input {
     --purple: #8b5cf6;
     --cyan: #00ffff;
 }
+
 body {
     background-color: var(--dark);
     font-family: Arial, sans-serif;
@@ -27,7 +35,8 @@ a {
 
 .navbar {
     padding: 0px 5%;
-    background: linear-gradient(to right,var(--cyan),var(--pink));
+    background-image: linear-gradient(90deg, rgb(193, 193, 193), rgb(107, 107, 107)), linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%, rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%, rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%), linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(236, 89, 75) 24%, rgb(227, 66, 87) 24%, rgb(227, 66, 87) 29%, rgb(217, 42, 98) 29%, rgb(217, 42, 98) 40%, rgb(208, 19, 109) 40%, rgb(208, 19, 109) 100%);
+    background-blend-mode: overlay, overlay, normal;
     color: white;
     color: #fff;
     display: flex;
@@ -39,12 +48,14 @@ a {
 
 
 .navbar h1 {
-    font-size: 2rem; /* Increase font size for the title */
+    font-size: 2rem;
+    /* Increase font size for the title */
 }
 
 .github-button {
     display: flex;
-    padding: 10px 15px; /* Increase padding */
+    padding: 10px 15px;
+    /* Increase padding */
     border-radius: 3px;
     border: 1px solid #fff;
     background-color: transparent;
@@ -59,21 +70,24 @@ a {
     border: 1px solid #333;
     color: #333;
 }
-i{
+
+i {
     font-size: 25px;
 }
-.nav-elements{
+
+.nav-elements {
     display: flex;
     font-size: 1.2rem;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
 }
-li{
+
+li {
     list-style-type: none;
 }
 
-.nav-elements li:hover{
+.nav-elements li:hover {
     color: #333;
 }
 
@@ -100,7 +114,7 @@ li{
 .Search-bar button {
     padding: 10px 20px;
     font-size: 1rem;
-    background: linear-gradient(to right,var(--pink),var(--purple));
+    background: linear-gradient(to right, var(--pink), var(--purple));
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -112,13 +126,13 @@ li{
 .Search-bar button:active {
     cursor: pointer;
     border-radius: 1rem;
-    background: linear-gradient(to right,var(--cyan),var(--pink));
+    background: linear-gradient(to right, var(--cyan), var(--pink));
     color: white;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(249, 104, 203, 0.5);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
@@ -137,7 +151,9 @@ h2 {
         outline: 0;
 
     }
-    .github-button:hover, .github-button:focus {
+
+    .github-button:hover,
+    .github-button:focus {
         border: 0;
         outline: 0;
     }
@@ -145,8 +161,9 @@ h2 {
     .github-text {
         display: none;
     }
-    i{
-     font-size: 30px;   
+
+    i {
+        font-size: 30px;
     }
 
     .generate-QR {
@@ -157,7 +174,8 @@ h2 {
         align-items: center;
     }
 
-    .Search-bar, .your-qr {
+    .Search-bar,
+    .your-qr {
         padding: 10px;
     }
 }
