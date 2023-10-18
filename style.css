@@ -12,13 +12,29 @@ input {
 }
 
 :root {
-    --dark: #374151;
-    --darker: #1f2937;
-    --darkest: #111827;
-    --gray: #6b7280;
-    --pink: #ec4899;
+    background: linear-gradient(95deg, #45a4f7, #817be8, #23a6d5, #bf41fa);
+    background-size: 400% 400%;
+    animation: gradient 17s ease infinite;
+    --darker: #264675;
+    --darkest: #192338;
+    --gray: #afcc0a;
+    --pink: #de5e9e;
     --purple: #8b5cf6;
     --cyan: #00ffff;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 body {
@@ -35,10 +51,10 @@ a {
 
 .navbar {
     padding: 0px 5%;
-    background-image: linear-gradient(90deg, rgb(193, 193, 193), rgb(107, 107, 107)), linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%, rgb(70, 99, 183) 68%, rgb(70, 99, 183) 86%, rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%), linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(236, 89, 75) 24%, rgb(227, 66, 87) 24%, rgb(227, 66, 87) 29%, rgb(217, 42, 98) 29%, rgb(217, 42, 98) 40%, rgb(208, 19, 109) 40%, rgb(208, 19, 109) 100%);
+    background-image: linear-gradient(90deg, rgb(193, 193, 193), rgba(128, 41, 41, 0.871)), linear-gradient(157.5deg, rgb(0, 165, 230) 0%, rgb(89, 104, 173) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(52, 116, 195) 60%, rgb(52, 116, 195) 68%, rgb(90, 148, 203) 68%, rgb(70, 99, 183) 86%, rgb(87, 83, 171) 86%, rgb(87, 83, 171) 100%), linear-gradient(135deg, rgb(0, 165, 230) 0%, rgb(0, 165, 230) 39%, rgb(17, 149, 218) 39%, rgb(17, 149, 218) 56%, rgb(35, 132, 206) 56%, rgb(35, 132, 206) 60%, rgb(181, 196, 69) 24%, rgb(227, 66, 87) 24%, rgb(39, 167, 142) 29%, rgb(222, 149, 212) 29%, rgb(217, 42, 98) 40%, rgb(195, 58, 181) 40%, rgba(231, 185, 227, 0.362) 100%);
     background-blend-mode: overlay, overlay, normal;
     color: white;
-    color: #fff;
+    color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
